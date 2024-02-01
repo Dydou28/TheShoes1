@@ -1,16 +1,22 @@
 import "./Accueil.css";
 
-import background from "@assets/fond-ecran.png";
-
+// import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import { VscLayers } from "react-icons/vsc";
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
+import background from "@assets/fond-ecran.png";
 
-export default function Accueil() {
+const Accueil = () => {
+  // const [menuOpen, setMenuOpen] = useState(false);
+
+  // const toggleMenu = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
+
   return (
     <main className="cover">
-      {" "}
       <section id="home" style={{ backgroundImage: `url(${background})` }}>
         <section className="header">
           <section id="pcnavbar">
@@ -54,39 +60,11 @@ export default function Accueil() {
             </ul>
             <section className="shoes">
               <div className="flexbox">
-                {/* <div className="text">
-                  <h2 className="nike">
-                    NIKE <br /> AIR JORDAN
-                  </h2>
-                  <h3 className="nike1">AIR </h3>{" "}
-                  <h3 className="nike2">JORDAN</h3>
-                  <div className="style-color">
-                    <h3 style={{ color: "#2CC3BA" }} className="nike1">
-                      AIR
-                    </h3>
-                    <h3 style={{ color: "white" }} className="nike2">
-                      JORDAN
-                    </h3>
-                  </div>
-                </div> */}
-
-                <div className="footer">
-                  {/* <img
-                    src="./src/assets/nike-logo.png"
-                    alt="nike"
-                    className="logo-nike"
-                  />
-                  <img
-                    src="./src/assets/nike-jordan.png"
-                    alt="jordan"
-                    className="jordan"
-                  /> */}
-                  <img
-                    src="./src/assets/nike.png"
-                    alt="nike"
-                    className="img-shoes"
-                  />
-                </div>
+                <img
+                  src="./src/assets/nike.png"
+                  alt="nike"
+                  className="img-shoes"
+                />
               </div>
               <div className="ul-footer">
                 <p>Twitter</p>
@@ -128,6 +106,69 @@ export default function Accueil() {
           </section>
         </section>
       </section>
+
+      {/* <section id="telnavbar">
+        <div className="header-color">
+          <div className="burger-menu">
+            <div className="burger-icon">
+              <VscLayers className="logo1" />
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
+            <div className="menu-content">
+              <ul className="navbar_links slideInDown">
+                <li>
+                  <Link to="/" className="navbar_link">
+                    Man
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/woman" className="navbar_link">
+                    Woman
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/kids" className="navbar_link">
+                    Kids{" "}
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/customise" className="navbar_link">
+                    Customise{" "}
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/sales" className="navbar_link">
+                    Sales{" "}
+                  </Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link to="/snkrs" className="navbar_link">
+                    SNKRS{" "}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section className="shoes">
+          <div className="flexbox">
+            <img src="./src/assets/nike.png" alt="nike" className="img-shoes" />
+          </div>
+          <div className="ul-footer">
+            <p>Twitter</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
+          </div>
+        </section>
+      </section> */}
     </main>
   );
-}
+};
+
+export default Accueil;
