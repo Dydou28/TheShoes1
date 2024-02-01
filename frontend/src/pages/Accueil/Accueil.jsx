@@ -1,12 +1,16 @@
 import "./Accueil.css";
 
+<<<<<<< HEAD
 // import React, { useState } from "react";
+=======
+>>>>>>> e607f9fa64f7d3d67135ee9e50523b151c7ee245
 import { Link } from "react-router-dom";
 
 import { VscLayers } from "react-icons/vsc";
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import background from "@assets/fond-ecran.png";
+<<<<<<< HEAD
 
 const Accueil = () => {
   // const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +19,10 @@ const Accueil = () => {
   //   setMenuOpen(!menuOpen);
   // };"react-icons/ai"
 
+=======
+
+const Accueil = () => {
+>>>>>>> e607f9fa64f7d3d67135ee9e50523b151c7ee245
   return (
     <main className="cover">
       <section id="home" style={{ backgroundImage: `url(${background})` }}>
