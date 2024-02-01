@@ -4,8 +4,7 @@ import background from "@assets/fond-ecran.png";
 
 import { Link } from "react-router-dom";
 import { VscLayers } from "react-icons/vsc";
-import { AiOutlineLeft } from "react-icons/ai";
-import { AiOutlineRight } from "react-icons/ai";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 export default function Accueil() {
   return (
@@ -54,33 +53,7 @@ export default function Accueil() {
             </ul>
             <section className="shoes">
               <div className="flexbox">
-                {/* <div className="text">
-                  <h2 className="nike">
-                    NIKE <br /> AIR JORDAN
-                  </h2>
-                  <h3 className="nike1">AIR </h3>{" "}
-                  <h3 className="nike2">JORDAN</h3>
-                  <div className="style-color">
-                    <h3 style={{ color: "#2CC3BA" }} className="nike1">
-                      AIR
-                    </h3>
-                    <h3 style={{ color: "white" }} className="nike2">
-                      JORDAN
-                    </h3>
-                  </div>
-                </div> */}
-
                 <div className="footer">
-                  {/* <img
-                    src="./src/assets/nike-logo.png"
-                    alt="nike"
-                    className="logo-nike"
-                  />
-                  <img
-                    src="./src/assets/nike-jordan.png"
-                    alt="jordan"
-                    className="jordan"
-                  /> */}
                   <img
                     src="./src/assets/nike.png"
                     alt="nike"
@@ -104,7 +77,7 @@ export default function Accueil() {
                   className="red
                   "
                 />
-                <span className="vertical-line"></span>
+                <span className="vertical-line" />
 
                 <div className="case-bis">
                   <h5 className="title-red"> NIKE AIR 031-Off Red </h5>
@@ -117,7 +90,7 @@ export default function Accueil() {
                   alt="white"
                   className="white"
                 />
-                <span className="vertical-line"></span>
+                <span className="vertical-line" />
                 <div className="case-bis">
                   <h5 className="title-white">NIKE AIR 032-Off White </h5>
                   <h4 className="price-white">$110.00</h4>
