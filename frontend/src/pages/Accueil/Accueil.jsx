@@ -1,16 +1,11 @@
 import "./Accueil.css";
 
-<<<<<<< HEAD
 // import React, { useState } from "react";
-=======
->>>>>>> e607f9fa64f7d3d67135ee9e50523b151c7ee245
 import { Link } from "react-router-dom";
 
 import { VscLayers } from "react-icons/vsc";
-import { AiOutlineLeft } from "react-icons/ai";
-import { AiOutlineRight } from "react-icons/ai";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import background from "@assets/fond-ecran.png";
-<<<<<<< HEAD
 
 const Accueil = () => {
   // const [menuOpen, setMenuOpen] = useState(false);
@@ -19,10 +14,6 @@ const Accueil = () => {
   //   setMenuOpen(!menuOpen);
   // };"react-icons/ai"
 
-=======
-
-const Accueil = () => {
->>>>>>> e607f9fa64f7d3d67135ee9e50523b151c7ee245
   return (
     <main className="cover">
       <section id="home" style={{ backgroundImage: `url(${background})` }}>
@@ -90,7 +81,7 @@ const Accueil = () => {
                   className="red
                   "
                 />
-                <span className="vertical-line"></span>
+                <span className="vertical-line" />
 
                 <div className="case-bis">
                   <h5 className="title-red"> NIKE AIR 031-Off Red </h5>
@@ -103,7 +94,7 @@ const Accueil = () => {
                   alt="white"
                   className="white"
                 />
-                <span className="vertical-line"></span>
+                <span className="vertical-line" />
                 <div className="case-bis">
                   <h5 className="title-white">NIKE AIR 032-Off White </h5>
                   <h4 className="price-white">$110.00</h4>
